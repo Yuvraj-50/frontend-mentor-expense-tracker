@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+  background-color: hsl(27, 66%, 92%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.main {
+  min-width: 350px;
+}
+
+.header {
+  background-color: hsl(10, 79%, 65%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 1rem 2rem;
+  border-radius: 15px;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.price {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.chart-box {
+  background-color: white;
+  padding: 1rem 2rem;
+  border-radius: 15px;
+}
+
+.chart-heading {
+  margin-bottom: 2.5rem;
+}
+
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid rgb(116, 116, 116);
+  padding-top: 1rem;
+}
+
+.total {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.extra {
+  font-weight: bold;
+}
+
+/* chart bars */
+.chart {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.bar {
+  background-color: hsl(10, 79%, 65%);
+  width: 30px;
+  height: 104px;
+  cursor: pointer;
+  transition: 0.5s ease;
+  position: relative;
+}
+
+.day {
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.bar:hover {
+  opacity: 0.8;
+}
+
+.highest {
+  background-color: hsl(186, 34%, 60%);
+}
+
+.amount-hover {
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.795);
+  color: white;
+  padding: 0.1rem 0.3rem;
+  border-radius: 5px;
+}
+
+.day {
+  color: gray;
+  margin-top: 0.5rem;
+  font-size: 0.8rem;
+}
+
+.mon {
+  height: calc(17.45 * 3px);
+}
+
+.tue {
+  height: calc(34.91 * 3px);
+}
+
+.wed {
+  height: calc(52.36 * 3px);
+}
+.thu {
+  height: calc(31.06 * 3px);
+}
+
+.fri {
+  height: calc(23.39 * 3px);
+}
+.sat {
+  height: calc(43.28 * 3px);
+}
+.sun {
+  height: calc(25.48 * 3px);
+}
